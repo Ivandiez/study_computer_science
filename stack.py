@@ -35,7 +35,7 @@ print(new_stack.size())
 
 # Test reverse string by stack
 rev_stack = Stack()
-for c in "Hello":
+for c in "Yesterday":
     stack.push(c)
 
 reverse = ""
@@ -44,3 +44,13 @@ for i in range(len(stack.items)):
     reverse += stack.pop()
 
 print(reverse)
+
+test_stack = Stack()
+test_lst = [1, 2, 3, 4, 5]
+res_lst = []
+for num in test_lst:
+    test_stack.push(num)
+
+for i in range(len(test_lst)):
+    res_lst.append(test_stack.pop())
+print(res_lst)
