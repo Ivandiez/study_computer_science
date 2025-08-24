@@ -18,6 +18,8 @@ class Queue:
         return len(self.items)
     
     def simulate_line(self, till_show, max_time):
+        # Time complexity: O(n)
+        # Space complexity: O(n)
         pq = Queue()
         tix_sold = []
 

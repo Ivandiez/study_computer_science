@@ -1,4 +1,6 @@
 def ss(number_list, n):
+    # Time complexity: O(n)
+    # Space complexity: O(1)
     for i in number_list:
         if i == n:
             return True
