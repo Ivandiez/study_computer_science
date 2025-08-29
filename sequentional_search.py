@@ -6,6 +6,7 @@ def ss(number_list, n):
             return True
     return False
 
+
 numbers = range(0, 100)
 ss1 = ss(numbers, 2)
 print(ss1)

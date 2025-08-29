@@ -1,6 +1,9 @@
 # Use this when our list is sorted (or sort before use)
 # Time complexity: O(log n)
 # Space complexity: O(1)
+from bisect import bisect_left
+
+
 def binary_search(a_list, n):
     first = 0
     last = len(a_list) - 1
@@ -22,18 +25,21 @@ print(binary_search(lst, 11))  # False
 
 
 # Built-in Python Binary Search function
-from bisect import bisect_left
 
 sorted_fruits = ['apple', 'banana', 'cherry', 'plum']
 print(bisect_left(sorted_fruits, 'banana'))  # 1
-print(bisect_left(sorted_fruits, 'blueberry'))  # 2 (since it should be after banana and before cherry)
+# 2 (since it should be after banana and before cherry)
+print(bisect_left(sorted_fruits, 'blueberry'))
 
 # Real-world usage of bisect_left (how to use)
+
+
 def binary_search_bisect(an_iterable, target):
     index = bisect_left(an_iterable, target)
     if index <= len(an_iterable) and an_iterable[index] == target:
         return True
     return False
+
 
 print(binary_search_bisect(sorted_fruits, 'banana'))  # True
 print(binary_search_bisect(sorted_fruits, 'blueberry'))  # False
@@ -54,6 +60,7 @@ def binary_search_string(an_iterable, find):
             else:
                 first = mid + 1
     return False
+
 
 print(binary_search_string(['a', 'b', 'c', 'd'], 'c'))  # True
 print(binary_search_string(['a', 'b', 'c', 'd'], 'e'))  # False
