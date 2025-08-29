@@ -26,10 +26,10 @@ print(binary_search(lst, 11))  # False
 
 # Built-in Python Binary Search function
 
-sorted_fruits = ['apple', 'banana', 'cherry', 'plum']
-print(bisect_left(sorted_fruits, 'banana'))  # 1
+sorted_fruits = ["apple", "banana", "cherry", "plum"]
+print(bisect_left(sorted_fruits, "banana"))  # 1
 # 2 (since it should be after banana and before cherry)
-print(bisect_left(sorted_fruits, 'blueberry'))
+print(bisect_left(sorted_fruits, "blueberry"))
 
 # Real-world usage of bisect_left (how to use)
 
@@ -41,8 +41,8 @@ def binary_search_bisect(an_iterable, target):
     return False
 
 
-print(binary_search_bisect(sorted_fruits, 'banana'))  # True
-print(binary_search_bisect(sorted_fruits, 'blueberry'))  # False
+print(binary_search_bisect(sorted_fruits, "banana"))  # True
+print(binary_search_bisect(sorted_fruits, "blueberry"))  # False
 
 
 # Binary search chars in list of chars in alphabet order
@@ -62,5 +62,5 @@ def binary_search_string(an_iterable, find):
     return False
 
 
-print(binary_search_string(['a', 'b', 'c', 'd'], 'c'))  # True
-print(binary_search_string(['a', 'b', 'c', 'd'], 'e'))  # False
+print(binary_search_string(["a", "b", "c", "d"], "c"))  # True
+print(binary_search_string(["a", "b", "c", "d"], "e"))  # False

@@ -1,6 +1,7 @@
 # Time complexity: O(logn)
 # Space complexity: O(1)
 
+
 def exponent_of_two(n):
     count = 0
     while n > 1:

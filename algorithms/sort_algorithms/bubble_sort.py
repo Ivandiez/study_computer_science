@@ -1,6 +1,7 @@
 # Time complexity: O(n**2), in best case O(n)
 # Space complexity: O(1)
 
+
 def bubble_sort(a_list):
     list_length = len(a_list)
     for i in range(list_length - 1):
