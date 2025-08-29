@@ -1,22 +1,23 @@
 import time
 import random
 
+
 class Queue:
     def __init__(self):
         self.items = []
-    
+
     def is_empty(self):
         return self.items == []
-    
+
     def enqueue(self, item):
         self.items.insert(0, item)
-    
+
     def dequeue(self):
         return self.items.pop()
-    
+
     def size(self):
         return len(self.items)
-    
+
     def simulate_line(self, till_show, max_time):
         # Time complexity: O(n)
         # Space complexity: O(n)
@@ -35,8 +36,9 @@ class Queue:
             person = pq.dequeue()
             print(person)
             tix_sold.append(person)
-        
+
         return person
+
 
 a_queue = Queue()
 print(a_queue.is_empty())

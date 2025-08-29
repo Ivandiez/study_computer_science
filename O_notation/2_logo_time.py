@@ -8,5 +8,6 @@ def exponent_of_two(n):
         count += 1
     return count
 
+
 print(exponent_of_two(16))
 print(exponent_of_two(32))

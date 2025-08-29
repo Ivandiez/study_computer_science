@@ -3,5 +3,6 @@ def anagram(w1, w2):
     w2 = w2.lower()
     return sorted(w1) == sorted(w2)
 
+
 print(anagram("cat", "act"))
 print(anagram("dog", "pretty"))
