@@ -13,5 +13,6 @@ def bubble_sort(a_list):
                 return a_list
     return a_list
 
+
 lst = [9, 1, 32, 10]
 print(bubble_sort(lst))
