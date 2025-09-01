@@ -6,11 +6,13 @@ def bottles_of_beer(bob):
         return
     tmp = bob
     bob -= 1
-    print("""{} bottles of the beer on the wall. {} bottles of the beer.
+    print(
+        """{} bottles of the beer on the wall. {} bottles of the beer.
           Take one, let it go around, {} bottles of the beer on the wall.
-          """.format(tmp,
-                     tmp,
-                     bob))
+          """.format(
+            tmp, tmp, bob
+        )
+    )
     bottles_of_beer(bob)
 
 

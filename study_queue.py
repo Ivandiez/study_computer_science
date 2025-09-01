@@ -1,5 +1,5 @@
-import time
 import random
+import time
 
 
 class Queue:
@@ -40,20 +40,21 @@ class Queue:
         return person
 
 
-a_queue = Queue()
-print(a_queue.is_empty())
+if __name__ == "__main__":
+    a_queue = Queue()
+    print(a_queue.is_empty())
 
-for i in range(5):
-    a_queue.enqueue(i)
+    for i in range(5):
+        a_queue.enqueue(i)
 
-for i in range(5):
-    print(a_queue.dequeue())
+    for i in range(5):
+        print(a_queue.dequeue())
 
-print()
-print(a_queue.size())
-print(a_queue.is_empty())
-print()
+    print()
+    print(a_queue.size())
+    print(a_queue.is_empty())
+    print()
 
-ticket_queue = Queue()
-sold = ticket_queue.simulate_line(5, 1)
-print(sold)
+    ticket_queue = Queue()
+    sold = ticket_queue.simulate_line(5, 1)
+    print(sold)
