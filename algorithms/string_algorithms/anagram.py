@@ -10,4 +10,4 @@ def is_anagram(s1, s2):
 
 s1 = "Emperor Octavian"
 s2 = "Captain over Rome"
-print(is_anagram(s1, s2))
+print(is_anagram(s1, s2))  # True
