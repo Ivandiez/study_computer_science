@@ -12,3 +12,12 @@ def last_digit(s1):
 
 
 print(last_digit("Buy 1 get 3 free"))  # 3
+
+
+print(
+    [
+        c
+        for c in ["selftaught", "code", "sit", "eat", "programming", "dinner", "one", "two", "coding", "a", "tech"]
+        if len(c) >= 4
+    ]
+)
