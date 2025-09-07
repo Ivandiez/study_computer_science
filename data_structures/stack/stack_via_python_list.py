@@ -1,0 +1,10 @@
+stack = []
+print(stack)
+stack.append("Kanye West")
+print(stack)
+stack.append("Jay-Z")
+print(stack)
+stack.append("Drake")
+print(stack)
+stack.pop()
+print(stack)
