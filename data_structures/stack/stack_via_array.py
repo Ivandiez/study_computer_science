@@ -1,3 +1,10 @@
+# Time complexities for:
+# Access: O(n)
+# Search: O(n)
+# Insertion: O(1)
+# Deletion: O(1)
+
+
 class Stack:
     def __init__(self):
         self.items = []
