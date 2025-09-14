@@ -1,7 +1,7 @@
 import heapq
 
 
-def dijkstra(graph, starting_vertex):
+def dijkstra(graph, starting_vertex, ending_distance=None):
     distances = {vertex: float("infinity") for vertex in graph}
     distances[starting_vertex] = 0
     pq = [(0, starting_vertex)]
@@ -15,7 +15,9 @@ def dijkstra(graph, starting_vertex):
             if distance < distances[neighbor]:
                 distances[neighbor] = distance
                 heapq.heappush(pq, (distance, neighbor))
-    return distances
+    if not ending_distance:
+        return distances
+    return distances.get(ending_distance, float("infinity"))
 
 
 graph = {
@@ -24,5 +26,6 @@ graph = {
     "C": {"D": 8},
     "D": {},
 }
-dijkstra(graph, "A")  # {'A': 0, 'B': 2, 'C': 6, 'D': 7}
-print(dijkstra(graph, "A"))
+
+print(dijkstra(graph, "A"))  # {'A': 0, 'B': 2, 'C': 6, 'D': 7}
+print(dijkstra(graph, "A", "D"))  # 7
